@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a final group project for the course Introduction to Database Systems (108下) in NCTU.\n"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our objective is to provide an offline map with wifi hotspot position around Hsinchu for user in need.\n"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The database came from the Hsinchu government and we also added the database for all convenience store in Taiwan to provide additional functionality.\n"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You can also add your own place marker if you wish.\n"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Source code is available at:\n   github.com/javiersim/hsinchu_tools\n\n"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:autoLink="web"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group members:\n          沈康勇 (0616114)\n          吳冠潔 (0616206)\n          李元定 (0616248)\n          謝旻紜 (0611289)"
+            android:textSize="18dp"/>
+    </LinearLayout>
+</ScrollView>

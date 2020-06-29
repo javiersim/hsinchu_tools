@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context=".FirstFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <CheckBox
+        android:id="@+id/frag1_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wifi"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/frag1_conv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convenience Store"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:id="@+id/frag1_conv_status1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="核准設立 (1)"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:buttonTint="@android:color/darker_gray"
+                android:checked="true"
+                android:clickable="false"/>
+
+            <CheckBox
+                android:id="@+id/frag1_conv_status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停業 (2)"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:buttonTint="@android:color/darker_gray"
+                android:layout_marginStart="15dp"
+                android:clickable="false"/>
+
+            <CheckBox
+                android:id="@+id/frag1_conv_status3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="撤銷/廢止 (3)"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:buttonTint="@android:color/darker_gray"
+                android:layout_marginStart="15dp"
+                android:clickable="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:id="@+id/frag1_conv_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7-11"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:buttonTint="@android:color/darker_gray"
+                android:checked="true"
+                android:clickable="false"/>
+
+            <CheckBox
+                android:id="@+id/frag1_conv_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全家"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:buttonTint="@android:color/darker_gray"
+                android:layout_marginStart="15dp"
+                android:checked="true"
+                android:clickable="false"/>
+
+            <CheckBox
+                android:id="@+id/frag1_conv_type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="萊爾富"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:buttonTint="@android:color/darker_gray"
+                android:layout_marginStart="15dp"
+                android:checked="true"
+                android:clickable="false"/>
+
+            <CheckBox
+                android:id="@+id/frag1_conv_type4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:buttonTint="@android:color/darker_gray"
+                android:layout_marginStart="15dp"
+                android:checked="true"
+                android:clickable="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <CheckBox
+        android:id="@+id/frag1_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/frag1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name like (not for conv)"
+            android:textColorHint="@android:color/tertiary_text_light"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/frag1_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="address like (empty for all)"
+            android:textColorHint="@android:color/tertiary_text_light"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="2dp"/>
+
+    <CheckBox
+        android:id="@+id/frag1_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area option"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: "
+            android:textSize="18dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@id/frag1_area_current">
+
+            <RadioButton style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:id="@+id/frag1_area_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current"
+                android:buttonTint="@android:color/darker_gray"
+                android:textSize="18dp"
+                android:clickable="false"/>
+
+            <RadioButton style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:id="@+id/frag1_area_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User marker"
+                android:buttonTint="@android:color/darker_gray"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp"
+                android:clickable="false"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radius: "
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/frag1_area_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" in km "
+            android:textColorHint="@android:color/tertiary_text_light"
+            android:textSize="18dp"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:enabled="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="km"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="**this will sort by distance in ascending order"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="2dp"/>
+
+    <Button
+        android:id="@+id/frag1_showlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW"
+        android:textSize="22dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="2dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginBottom="2dp"/>
+
+</LinearLayout>

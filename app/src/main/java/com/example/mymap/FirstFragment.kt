@@ -123,7 +123,6 @@ class FirstFragment : Fragment() {
             val status: Int = frag1_conv_status1.isChecked.int(0) + frag1_conv_status2.isChecked.int(1) + frag1_conv_status3.isChecked.int(2)
             val type: Int = frag1_conv_type1.isChecked.int(0) + frag1_conv_type2.isChecked.int(1) + frag1_conv_type3.isChecked.int(2) + frag1_conv_type4.isChecked.int(3)
 
-            //itemlist = emptyArray()
             itemlist = dbhelper.queryAdvance(table, frag1_name.text.toString(), frag1_addr.text.toString(), status, type, lat, lng, radius)
 
             if (itemlist.isEmpty()) {

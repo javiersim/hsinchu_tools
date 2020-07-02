@@ -338,15 +338,15 @@ class Sqlite(
     private fun genWifiQuery(name: String, addr: String): String {
         return "SELECT 編號 as key, 'wifi' as type,  熱點名稱 as name, 地址 as addr, 緯度, 經度, cos緯度, sin緯度, cos經度, sin經度 " +
                 "FROM " + tableName1 + " " +
-                "WHERE 熱點名稱 LIKE '%" + name + "%' AND " +
-                "地址 LIKE '%" + addr + "%' "
+                "WHERE 熱點名稱 LIKE '%" + name.replace("'", "''") + "%' AND " +
+                "地址 LIKE '%" + addr.replace("'", "''") + "%' "
     }
 
     private fun genConvQuery(addr: String, status: Int, type: Int): String {
         var query = "SELECT 分公司統一編號 as key, 'conv' as type,  t2.店名 as name, t1.分公司地址 as addr, 緯度, 經度, cos緯度, sin緯度, cos經度, sin經度 " +
                     "FROM " + tableName2 + " as t1, " + tableName0 + " as t2 " +
                     "WHERE t1.公司統一編號 = t2.公司統一編號 AND " +
-                    "t1.分公司地址 LIKE '%" + addr + "%' "
+                    "t1.分公司地址 LIKE '%" + addr.replace("'", "''") + "%' "
 
         var statusq = ""
         if (status and 0b001 > 0) {
@@ -404,8 +404,8 @@ class Sqlite(
     private fun genCustomQuery(name: String, addr: String): String {
         return "SELECT rowid as key, 'custom' as type,  名稱 as name, 地址 as addr, 緯度, 經度, cos緯度, sin緯度, cos經度, sin經度 " +
                 "FROM " + tableName3 + " " +
-                "WHERE 名稱 LIKE '%" + name + "%' AND " +
-                "地址 LIKE '%" + addr + "%' "
+                "WHERE 名稱 LIKE '%" + name.replace("'", "''") + "%' AND " +
+                "地址 LIKE '%" + addr.replace("'", "''") + "%' "
     }
 
     fun deleteWifi(key: String) {

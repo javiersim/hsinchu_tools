@@ -212,6 +212,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     item.isVisible = false
                 }
             }
+            add.visibility = View.GONE
+            remove.visibility = View.GONE
+            delete.visibility = View.GONE
         }
 
         custom.setOnCheckedChangeListener { _, isChecked ->
@@ -224,6 +227,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     item.isVisible = false
                 }
             }
+            add.visibility = View.GONE
+            remove.visibility = View.GONE
+            delete.visibility = View.GONE
         }
 
         advance.setOnCheckedChangeListener { _, isChecked ->
@@ -236,6 +242,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     item.isVisible = false
                 }
             }
+            add.visibility = View.GONE
+            remove.visibility = View.GONE
+            delete.visibility = View.GONE
         }
 
         add.setOnClickListener {

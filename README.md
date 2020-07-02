@@ -11,7 +11,7 @@ Your can download the map [here](https://drive.google.com/file/d/1Yl2Dt7KEH2GZt9
 and place it in *`app/src/main/res/raw`*
 >
 ---
-You can download the builded apk [here](https://drive.google.com/file/d/1Nt8c2-N19vW2JIJROjswoAyNoRA73u_m/view?usp=sharing)
+You can download the builded apk [here](https://drive.google.com/file/d/1CyleCxupR-tW2d4W5QSWAo4CrkPj5FFn/view?usp=sharing)
 >
 ---
 **Notice: This project is wrote and built for android 10 and above**
